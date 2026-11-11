@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>حمّل شاحنة المتون</title>
+<meta name="description" content="لعبة تحفّظك الأربعين النووية وتحفة الأطفال والجزرية والألفية. مجانية، بدون إعلانات، وتشتغل بدون إنترنت.">
+<meta property="og:title" content="شاحنة المتون">
+<meta property="og:description" content="لعبة تحفّظك المتون وأنت تسوق. مجانية وبدون إعلانات.">
+<meta property="og:image" content="https://1420abdulelah-beep.github.io/ice-cream-truck-support/get/icon.jpg">
+<script>
+/* Phones go straight to their own store; everything else sees both buttons. */
+var IOS='https://apps.apple.com/sa/app/id6823555972?l=ar';
+var AND='https://play.google.com/store/apps/details?id=com.abdulelah.icecreamtruck&hl=ar';
+(function(){
+  var ua=navigator.userAgent||'';
+  var ios=/iPhone|iPad|iPod/i.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+  if(ios) location.replace(IOS); else if(/Android/i.test(ua)) location.replace(AND);
+})();
+</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lalezar&family=Readex+Pro:wght@400;600;700&display=swap">
+<style>
+:root{--bg:#fff7e8;--fg:#2b1f45;--muted:#6b5a85;--pink:#ff5fa2;--card:#fffaf2;--ink:#2b1f45}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--fg);font-family:'Readex Pro',system-ui,sans-serif;display:flex;align-items:center;justify-content:center;padding:24px 16px}
+main{width:100%;max-width:420px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:18px}
+img{width:128px;height:128px;border-radius:30px;border:5px solid var(--ink);box-shadow:0 8px 0 var(--ink)}
+h1{font:400 clamp(40px,12vw,56px)/1.1 Lalezar,sans-serif;margin:8px 0 0}
+p{margin:0;color:var(--muted);line-height:1.8;font-size:17px}
+.tags{font-weight:700;color:var(--fg)}
+a.btn{display:block;width:100%;text-decoration:none;color:#fff;background:var(--pink);font:400 28px/1 Lalezar,sans-serif;padding:16px 12px 20px;border-radius:999px;border:5px solid var(--ink);box-shadow:0 7px 0 var(--ink)}
+a.btn.alt{background:#ffd84d;color:var(--ink)}
+a.btn:active{transform:translateY(4px);box-shadow:0 3px 0 var(--ink)}
+.btns{width:100%;display:flex;flex-direction:column;gap:18px;margin-top:8px}
+</style>
+</head>
+<body>
+<main>
+  <img src="icon.jpg" alt="أيقونة شاحنة المتون" width="128" height="128">
+  <h1>شاحنة المتون</h1>
+  <p>لعبة تحفّظك الأربعين النووية وأنت تسوق، ومعها تحفة الأطفال والجزرية والألفية: سبعة متون بالشرح.</p>
+  <p class="tags">مجانية • بدون إعلانات • لجميع الأعمار</p>
+  <div class="btns">
+    <a class="btn" id="ios" href="https://apps.apple.com/sa/app/id6823555972?l=ar">حمّلها من App Store</a>
+    <a class="btn alt" id="and" href="https://play.google.com/store/apps/details?id=com.abdulelah.icecreamtruck&hl=ar">حمّلها من Google Play</a>
+  </div>
+</main>
+</body>
+</html>
